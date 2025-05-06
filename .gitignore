@@ -1,0 +1,23 @@
+# Node
+node_modules/
+npm-debug.log
+
+# PHP (Laravel)
+vendor/
+.env
+
+# Others
+*.log
+*.cache
+
+# Docker
+docker-compose.override.yml
+
+# IDEs / Editors
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db

@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  cart-service:
+    build:
+      context: .
+    container_name: cart-service
+    restart: always
+    ports:
+      - "8002:8000"
+    environment:
+      APP_ENV: local
+      DB_CONNECTION: mysql
+      DB_HOST: ecommerce-mysql
+      DB_PORT: 3306
+      DB_DATABASE: ecommerce
+      DB_USERNAME: ecommerce
+      DB_PASSWORD: ecommerce
+      RABBITMQ_HOST: ecommerce-rabbitmq
+      RABBITMQ_PORT: 5672
+      RABBITMQ_USER: guest
+      RABBITMQ_PASSWORD: guest
+      RABBITMQ_QUEUE: order_queue
+    networks:
+      - ecommerce-net
+
+networks:
+  ecommerce-net:
+    external: true

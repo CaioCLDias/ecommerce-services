@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  payment-service:
+    build:
+      context: .
+    container_name: payment-service
+    restart: always
+    ports:
+      - "8004:8000"
+    environment:
+      APP_ENV: local
+      DB_CONNECTION: mysql
+      DB_HOST: ecommerce-mysql
+      DB_PORT: 3306
+      DB_DATABASE: ecommerce
+      DB_USERNAME: ecommerce
+      DB_PASSWORD: ecommerce
+      RABBITMQ_HOST: ecommerce-rabbitmq
+      RABBITMQ_PORT: 5672
+      RABBITMQ_USER: guest
+      RABBITMQ_PASSWORD: guest
+      RABBITMQ_QUEUE: orders
+    networks:
+      - ecommerce-net
+
+networks:
+  ecommerce-net:
+    external: true
