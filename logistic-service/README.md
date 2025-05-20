@@ -14,7 +14,7 @@ Serviço responsável pela logística e entrega.
 ## 📦 Fila
 
 - Consome mensagens do Order Serive
-- Publica mensagens sobre ataulização dos status do Pedido
+- Publica mensagens sobre ataulização dos status da entrega
 
 ## 🚀 Como rodar
 
