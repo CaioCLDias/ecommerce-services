@@ -16,7 +16,8 @@ Serviço responsável pelo carrinho de compras.
 
 ## 📦 Fila
 
-- Não consome nem publica mensagens.
+- Não consome mensagens.
+- Publica o pedidido criado para o order service.
 
 ## 📦 Como rodar
 
