@@ -17,7 +17,7 @@ Serviço responsável por processar pedidos.
 
 ## 📦 Fila
 
-- Consome mensagens do Cart
+- Consome mensagens do Cart, Status da entrega e Status do pagamento
 - Publica mensagens para o Payment, Logistic e  Notification
 
 ## 🚀 Como rodar
