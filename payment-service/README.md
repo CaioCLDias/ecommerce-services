@@ -15,7 +15,7 @@ Serviço responsável por processar pagamentos.
 ## 📦 Fila
 
 - Consome mensagens de pedidos
-- Publica mensagens de pagamento concluído ou falhado
+- Publica mensagens sobre o status de pagamento
 
 ## 🚀 Como rodar
 
